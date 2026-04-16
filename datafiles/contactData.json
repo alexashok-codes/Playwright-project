@@ -1,0 +1,7 @@
+{
+  "validData": {
+    "forename": "Planit Tester",
+    "email": "Tester@Planit.com",
+    "message": "This is a test message from JSON."
+  }
+}

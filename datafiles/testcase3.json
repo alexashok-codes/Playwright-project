@@ -1,0 +1,12 @@
+{
+  "quantities": {
+    "Stuffed Frog": 2,
+    "Fluffy Bunny": 5,
+    "Valentine Bear": 3
+  },
+  "prices": {
+    "Stuffed Frog": 10.99,
+    "Fluffy Bunny": 9.99,
+    "Valentine Bear": 14.99
+  }
+}

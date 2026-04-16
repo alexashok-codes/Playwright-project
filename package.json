@@ -1,0 +1,38 @@
+{
+  "name": "playwright-automation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+  "test": "cucumber-js",
+  "allure:generate": "allure generate allure-report --clean -o allure-report",
+  "allure:open": "allure open allure-report",
+  "test:report": "npm run test && npm run allure:generate && npm run allure:open"
+},
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@cucumber/cucumber": "^12.8.1",
+    "@playwright/test": "^1.59.1",
+    "@types/node": "^25.6.0",
+    "allure-commandline": "^2.38.1",
+    "allure-cucumberjs": "^3.7.1",
+    "allure-js-commons": "^3.7.1",
+    "allure-playwright": "^3.7.1",
+    "cross-env": "^10.1.0",
+    "cucumber-html-reporter": "^7.2.0",
+    "playwright": "^1.59.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^6.0.2"
+  },
+  "directories": {
+    "test": "tests"
+  },
+  "dependencies": {
+    "dotenv": "^17.4.2",
+    "playwright-core": "^1.37.1",
+    "undici-types": "^7.16.0"
+  }
+}
