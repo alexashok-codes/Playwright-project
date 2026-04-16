@@ -1,16 +1,34 @@
-import { Before, After, setDefaultTimeout } from "@cucumber/cucumber";
-import { chromium } from "playwright";
+import {
+  Before,
+  After,
+  setDefaultTimeout,
+  Status
+} from "@cucumber/cucumber";
+
+import { chromium, Browser, Page, BrowserContext } from "playwright";
 import dotenv from "dotenv";
 
 dotenv.config();
+
 setDefaultTimeout(60 * 1000);
 
+// Extend Cucumber World
+declare module "@cucumber/cucumber" {
+  interface World {
+    browser: Browser;
+    context: BrowserContext;
+    page: Page;
+  }
+}
+
+/**
+ * BEFORE HOOK
+ */
 Before(async function () {
-  // GitHub Actions automatically sets CI=true
   const isCI = process.env.CI === "true";
 
   this.browser = await chromium.launch({
-    headless: isCI ? true : false,         // Headless in CI, headed locally
+    headless: isCI,
     args: isCI ? ["--no-sandbox"] : ["--start-maximized"]
   });
 
@@ -21,13 +39,25 @@ Before(async function () {
   this.page = await this.context.newPage();
 });
 
+/**
+ * AFTER HOOK
+ */
 After(async function (scenario) {
-  if (scenario.result?.status === "FAILED") {
-    const screenshot = await this.page.screenshot({ fullPage: true });
-    this.attach(screenshot, "image/png");
+  try {
+    // Screenshot only on failure
+    if (scenario.result?.status === Status.FAILED && this.page) {
+      const screenshot = await this.page.screenshot({
+        fullPage: true
+      });
+
+      await this.attach(screenshot, "image/png");
+    }
+  } catch (err) {
+    console.log("After hook error:", err);
   }
 
-  await this.page.close();
-  await this.context.close();
-  await this.browser.close();
+  // Cleanup safely
+  await this.page?.close();
+  await this.context?.close();
+  await this.browser?.close();
 });

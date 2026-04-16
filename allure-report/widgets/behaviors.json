@@ -1,1 +1,1 @@
-{"total":0,"items":[]}
+{"total":3,"items":[{"uid":"ea71561cc238dbebbe5ec3ef2375c9bc","name":"Successful contact form submission","statistic":{"failed":0,"broken":0,"skipped":0,"passed":5,"unknown":0,"total":5}},{"uid":"80dff1ec3fbb31e6d97f9da5c3dd42e0","name":"Contact page validation","statistic":{"failed":0,"broken":0,"skipped":0,"passed":1,"unknown":0,"total":1}},{"uid":"94cb0d59fe9836348b407f9ee3cce73e","name":"Test Case 3 - Cart validation","statistic":{"failed":0,"broken":0,"skipped":0,"passed":1,"unknown":0,"total":1}}]}
