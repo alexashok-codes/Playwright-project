@@ -10,7 +10,7 @@ module.exports = {
 
     format: [
       'progress',
-      'json:allure-report/results.json'
+      'json:./allure-results/results.json'   // ✅ FIXED
     ],
 
     publishQuiet: true
