@@ -8,8 +8,8 @@ export default defineConfig({
   workers: process.env.CI ? 1 : undefined,
 
   reporter: [
-    ['html'],
-     ['allure-playwright', { resultsDir: 'allure-results'}]
+    ['list'],
+  ['allure-playwright']
   ],
 
   use: {

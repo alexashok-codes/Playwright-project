@@ -9,8 +9,8 @@ module.exports = {
     paths: ['features/**/*.feature'],
 
     format: [
-      'progress',
-      'json:./allure-results/results.json'   // ✅ FIXED
+      "progress",
+      "json:reports/cucumber.json"
     ],
 
     publishQuiet: true

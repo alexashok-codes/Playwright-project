@@ -1,0 +1,640 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "contact-page-validation;validate-mandatory-fields-on-contact-form",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Validate mandatory fields on contact form",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 586528000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I go to the contact page from the home page",
+            "match": {
+              "location": "steps\\common_steps.ts:4"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2794733499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "I click the submit button",
+            "match": {
+              "location": "steps\\ContactPage.ts:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 50528800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "I should see validation error messages for mandatory fields",
+            "match": {
+              "location": "steps\\ContactPage.ts:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 18560300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "I populate all mandatory fields",
+            "match": {
+              "location": "steps\\ContactPage.ts:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 63711699
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "I click the submit button",
+            "match": {
+              "location": "steps\\ContactPage.ts:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 64246199
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "I should not see any validation error messages",
+            "match": {
+              "location": "steps\\ContactPage.ts:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 12211100
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 422724799
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "contact-page-validation",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Contact page validation",
+    "tags": [],
+    "uri": "features\\contact.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "successful-contact-form-submission;submit-contact-form-successfully-(run-multiple-times)",
+        "keyword": "Scenario Outline",
+        "line": 11,
+        "name": "Submit contact form successfully (run multiple times)",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 530121000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I go to the contact page from the home page",
+            "match": {
+              "location": "steps\\common_steps.ts:4"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2200915200
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "I populate all mandatory fields",
+            "match": {
+              "location": "steps\\ContactPage.ts:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 74764900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 6,
+            "name": "I click the submit button",
+            "match": {
+              "location": "steps\\ContactPage.ts:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 70850500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "I should see a successful submission message",
+            "match": {
+              "location": "steps\\ContactPage.ts:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 10698644099
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 319433199
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "successful-contact-form-submission;submit-contact-form-successfully-(run-multiple-times)",
+        "keyword": "Scenario Outline",
+        "line": 12,
+        "name": "Submit contact form successfully (run multiple times)",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 476214100
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I go to the contact page from the home page",
+            "match": {
+              "location": "steps\\common_steps.ts:4"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2288036599
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "I populate all mandatory fields",
+            "match": {
+              "location": "steps\\ContactPage.ts:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 65073300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 6,
+            "name": "I click the submit button",
+            "match": {
+              "location": "steps\\ContactPage.ts:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 75339400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "I should see a successful submission message",
+            "match": {
+              "location": "steps\\ContactPage.ts:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 15860361100
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 313350200
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "successful-contact-form-submission;submit-contact-form-successfully-(run-multiple-times)",
+        "keyword": "Scenario Outline",
+        "line": 13,
+        "name": "Submit contact form successfully (run multiple times)",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 540117899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I go to the contact page from the home page",
+            "match": {
+              "location": "steps\\common_steps.ts:4"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2218426999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "I populate all mandatory fields",
+            "match": {
+              "location": "steps\\ContactPage.ts:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 58453900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 6,
+            "name": "I click the submit button",
+            "match": {
+              "location": "steps\\ContactPage.ts:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 73502800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "I should see a successful submission message",
+            "match": {
+              "location": "steps\\ContactPage.ts:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 11211839899
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 310332000
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "successful-contact-form-submission;submit-contact-form-successfully-(run-multiple-times)",
+        "keyword": "Scenario Outline",
+        "line": 14,
+        "name": "Submit contact form successfully (run multiple times)",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 465086100
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I go to the contact page from the home page",
+            "match": {
+              "location": "steps\\common_steps.ts:4"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2184873800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "I populate all mandatory fields",
+            "match": {
+              "location": "steps\\ContactPage.ts:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 70800199
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 6,
+            "name": "I click the submit button",
+            "match": {
+              "location": "steps\\ContactPage.ts:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 90336299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "I should see a successful submission message",
+            "match": {
+              "location": "steps\\ContactPage.ts:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3476662599
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 322294999
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "successful-contact-form-submission;submit-contact-form-successfully-(run-multiple-times)",
+        "keyword": "Scenario Outline",
+        "line": 15,
+        "name": "Submit contact form successfully (run multiple times)",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 455831400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I go to the contact page from the home page",
+            "match": {
+              "location": "steps\\common_steps.ts:4"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2252546000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "I populate all mandatory fields",
+            "match": {
+              "location": "steps\\ContactPage.ts:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 80472800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 6,
+            "name": "I click the submit button",
+            "match": {
+              "location": "steps\\ContactPage.ts:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 72303099
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "I should see a successful submission message",
+            "match": {
+              "location": "steps\\ContactPage.ts:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 11195232100
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 358532300
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "successful-contact-form-submission",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Successful contact form submission",
+    "tags": [],
+    "uri": "features\\testcase2.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "test-case-3---cart-validation;validate-product-prices,-subtotals-and-total",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Validate product prices, subtotals and total",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 469554499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I go to the contact page from the home page",
+            "match": {
+              "location": "steps\\common_steps.ts:4"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2269215899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "I go to the Shop page from the home page and add all Test Case 3 products to the cart",
+            "match": {
+              "location": "steps\\testcase3.steps.ts:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 711765400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 6,
+            "name": "I go to the cart page",
+            "match": {
+              "location": "steps\\testcase3.steps.ts:21"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 59347600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "the price for each Test Case 3 product should be correct",
+            "match": {
+              "location": "steps\\testcase3.steps.ts:26"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 212074600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "the subtotal for each Test Case 3 product should be correct",
+            "match": {
+              "location": "steps\\testcase3.steps.ts:31"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 11578800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "the total should equal the sum of all Test Case 3 subtotals",
+            "match": {
+              "location": "steps\\testcase3.steps.ts:36"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 34884700
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 381542299
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "test-case-3---cart-validation",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Test Case 3 - Cart validation",
+    "tags": [],
+    "uri": "features\\testcase3.feature"
+  }
+]
